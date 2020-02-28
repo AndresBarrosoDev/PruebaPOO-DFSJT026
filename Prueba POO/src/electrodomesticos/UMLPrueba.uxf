@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>350</y>
+      <w>200</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Televisor&gt;&gt;
+Package::electrodomesticos
+--
+-resolucion: int
+=sintonizadorTDT: boolean
+--
++set..
++get..
++precioFinal(): Void
+--
+Responsibilities
+Extiende de Electrodomestico.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>50</y>
+      <w>260</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Electrodomestico&gt;&gt;
+Package::electrodomesticos
+--
+-precio: int
+-color: String
+-consumoEnergetico: char
+-peso: int
+--
++set..
++get..
++comprobarConsumoEnergetico(): Void
++comprobarColor(): Void
++precioFinal(): Void
+--
+Responsibilities
+Clase padre de: Lavadora y Televisor.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>350</y>
+      <w>200</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Lavadora&gt;&gt;
+Package::electrodomesticos
+--
+-carga: int
+--
++set..
++get..
++precioFinal(): Void
+--
+Responsibilities
+Extiende de Electrodomestico.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>270</y>
+      <w>50</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>270</y>
+      <w>50</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;30.0;80.0</additional_attributes>
+  </element>
+</diagram>
